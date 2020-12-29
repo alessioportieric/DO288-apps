@@ -1,5 +1,5 @@
 # Use the httpd-parent image as base
-FROM quay.io/redhattraining/httpd-parent
+FROM httpd:2.4
 EXPOSE 8080
 LABEL io.openshift.expose-service="8080:http"
 LABEL io.k8s.description="A basic Apache HTTP Server child image, uses ONBUILD" \
